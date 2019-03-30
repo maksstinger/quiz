@@ -74,12 +74,6 @@ comics-content-start-page {
 /*END HELLO USER*/
 
 
-
-
-
-
-
-
 /*START FIRST LEVEL*/
 
 .first-level {
@@ -140,8 +134,6 @@ comics-content-start-page {
     width: 100%;
     display: none;
 }
-
-
 
 .coin-block {
     background: url("../images/orel.png") no-repeat;
@@ -222,20 +214,11 @@ comics-content-start-page {
     background-color: #fff;
     color: #622122;
 }
-#answer1,#answer2,#answer3,#answer4{
+#answer1,#answer2,#answer3,#answer4 {
     display:none;
     margin-bottom: 20px;
 }
-.bubble {
-    text-decoration: none;
-    font-size: 20px;
-    margin-right: 20px;
-    color: #fff;
-    background: #3C8FB7;
-    padding: 4px 8px;
-    border: 0;
-    cursor: pointer;
-}
+
 .langChoose {
     background: url("../images/goCoding/chooseLang.jpg") no-repeat;
     -webkit-background-size: 100% 100%;
@@ -361,6 +344,179 @@ comics-content-start-page {
 
 /* Начало ВРУБЛЕВСКИЙ код*/
 
+/*.sweetHome, .entryHome, .computerGameHome,*/
+/*.playComputerGameHome, .fireComputerHome,*/
+/*.ripGameFire, .streetPlay, .dropPool,*/
+/*.dropRipPool, .ripPool, .watchTv, .watchProblem,*/
+/*.tvRipHome, .ripTV, .sleepSweetHome, .goodFriends {*/
+    /*-webkit-background-size: 900px 100%;*/
+    /*background-size: 700px 100%;*/
+    /*background-position: center;*/
+    /*height: 70vh;*/
+    /*width: 100%;*/
+    /*display: none;*/
+/*}*/
+
+
+.sweetHome {
+    background: url("../images/sweetHome/goSweetHome.JPG") no-repeat;
+    -webkit-background-size: 900px 100%;
+    background-size: 700px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.entryHome {
+    background: url("../images/sweetHome/entryHome.JPG") no-repeat;
+    -webkit-background-size: 900px 100%;
+    background-size: 700px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.computerGameHome {
+    background: url("../images/sweetHome/computerGameHome.JPG") no-repeat;
+    -webkit-background-size: 700px 100%;
+    background-size: 700px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.playComputerGameHome {
+    background: url("../images/sweetHome/playComputerGameHome.JPG") no-repeat;
+    -webkit-background-size: 700px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.fireComputerHome {
+    background: url("../images/sweetHome/fireComputerHome.png") no-repeat;
+    -webkit-background-size: 600px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.ripGameFire {
+    background: url("../images/sweetHome/ripGameFire.png") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.streetPlay {
+    background: url("../images/sweetHome/streetPlay.JPG") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.dropPool {
+    background: url("../images/sweetHome/dropPool.JPG") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.dropRipPool {
+    background: url("../images/sweetHome/fireComputerHome.png") no-repeat;
+    -webkit-background-size: 600px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.ripPool {
+    background: url("../images/sweetHome/ripGameFire.png") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.watchTv {
+    background: url("../images/sweetHome/watchTVHome.JPG") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.watchProblem {
+    background: url("../images/sweetHome/watchProblemHome.JPG") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.tvRipHome {
+    background: url("../images/sweetHome/fireComputerHome.png") no-repeat;
+    -webkit-background-size: 600px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.ripTV {
+    background: url("../images/sweetHome/ripGameFire.png") no-repeat;
+    -webkit-background-size: 600px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.sleepSweetHome {
+    background: url("../images/sweetHome/sleepHome.JPG") no-repeat;
+    -webkit-background-size: 600px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.goodFriends {
+    background: url("../images/sweetHome/friends.JPG") no-repeat;
+    -webkit-background-size: 600px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
 
 /* Конец ВРУБЛЕВСКИЙ код*/
 

@@ -25,6 +25,24 @@ var pythonStarted = document.querySelector('.pythonStarted');
 var php = document.querySelector('.php');
 var phpStarted = document.querySelector('.phpStarted');
 
+/* НАЧАЛО ВРУБЛЕВСКИЙ КОД*/
+var sweetHome = document.querySelector('.sweetHome');
+var entryHome = document.querySelector('.entryHome');
+var computerGameHome = document.querySelector('.computerGameHome');
+var playComputerGameHome = document.querySelector('.playComputerGameHome');
+var fireComputerHome = document.querySelector('.fireComputerHome');
+var ripGameFire = document.querySelector('.ripGameFire');
+var streetPlay = document.querySelector('.streetPlay');
+var dropPool = document.querySelector('.dropPool');
+var dropRipPool = document.querySelector('.dropRipPool');
+var ripPool = document.querySelector('.ripPool');
+var watchTv = document.querySelector('.watchTv');
+var watchProblem = document.querySelector('.watchProblem');
+var tvRipHome = document.querySelector('.tvRipHome');
+var ripTV = document.querySelector('.ripTV');
+var sleepSweetHome = document.querySelector('.sleepSweetHome');
+var goodFriends = document.querySelector('.goodFriends');
+/* КОНЕЦ ВРУБЛЕВСКИЙ ПЕРЕМЕННЫЕ*/
 
 
 function userHello () {
@@ -55,7 +73,6 @@ function coin(min, max) {
     rand = Math.round(rand);
     return rand;
 }
-
 
 
 function getCoin(number) {
@@ -229,4 +246,106 @@ var quizArray = [
             }
         }
     }
-//Каракулько закончил
+//КАРАКУЛЬКО КОНЕЦ
+
+//ВРУБЛЕВСКИЙ ФУНКЦИИ
+function goSweetHome() {
+    firstLevel.classList.remove('show');
+    sweetHome.classList.add('show');
+}
+
+function entrySweetHome() {
+    sweetHome.classList.remove('show');
+    entryHome.classList.add('show')
+}
+
+function playComputerHome() {
+    entryHome.classList.remove('show');
+    computerGameHome.classList.add('show')
+}
+
+function entryComputerHome() {
+    computerGameHome.classList.remove('show');
+    playComputerGameHome.classList.add('show')
+}
+
+function fireGameHome() {
+    playComputerGameHome.classList.remove('show');
+    fireComputerHome.classList.add('show')
+}
+
+function ripFunctionCompHome() {
+    fireComputerHome.classList.remove('show');
+    ripGameFire.classList.add('show')
+}
+
+function newGameCompHome() {
+    ripGameFire.classList.remove('show');
+    entryHome.classList.add('show');
+}
+
+function playStreetHome() {
+    entryHome.classList.remove('show');
+    streetPlay.classList.add('show')
+}
+
+function poolDropHome() {
+    streetPlay.classList.remove('show');
+    dropPool.classList.add('show')
+}
+
+function dropRipPoolHome() {
+    dropPool.classList.remove('show');
+    dropRipPool.classList.add('show')
+}
+
+function dropHome() {
+    dropRipPool.classList.remove('show');
+    ripPool.classList.add('show')
+}
+
+function newGameStreetHome() {
+    ripPool.classList.remove('show');
+   entryHome.classList.add('show')
+}
+
+function watchTVHome() {
+    entryHome.classList.remove('show');
+    watchTv.classList.add('show')
+}
+
+function watchProblemHome() {
+    watchTv.classList.remove('show');
+    watchProblem.classList.add('show')
+}
+
+function ripProblemHome() {
+    watchProblem.classList.remove('show');
+    tvRipHome.classList.add('show')
+}
+
+function ripTVHome() {
+    tvRipHome.classList.remove('show');
+    ripTV.classList.add('show')
+}
+
+function newGameTVHome() {
+    ripTV.classList.remove('show');
+    entryHome.classList.add('show')
+}
+
+function sleepHome() {
+    entryHome.classList.remove('show');
+    sleepSweetHome.classList.add('show')
+}
+
+function friendHome() {
+    sleepSweetHome.classList.remove('show');
+    goodFriends.classList.add('show')
+}
+
+function firstPageDocument() {
+    goodFriends.classList.remove('show');
+    firstLevel.classList.add('show')
+}
+//КОНЕЦ ВРУБЛЕВСКИЙ КОД

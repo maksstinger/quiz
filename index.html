@@ -43,7 +43,7 @@
         <button class="option" onclick="goCinema()">Пойти в кино</button>
         <button class="option" onclick="goConcert()">Пойти на концерт</button>
         <button class="option" onclick="goCoding()">Записаться на курсы программирования</button>
-        <button class="option">Думать о хорошем</button>
+        <button class="option" onclick="goSweetHome()">Пойти домой</button>
     </div>
 </section>
 <!--end first level-->
@@ -160,22 +160,17 @@
     </div>
 </section>
 
-<!--end JS chosen-->
-<!--start jsStarted-->
-
-<!-- Здесь ниже пишем радиобаттоны и задачки, а кнопка "сдать на проверку" выдает результат и пишет вывод -->
 <section class="phpStarted">
     <div class="text-block">
         <p class="text-block-text">TEXT готов</p>
     </div>
     <div class="options-block">
-        <button class="option-start-test" onclick="">Сдать на проверку</button>
-        </div>
+        <!--<button class="option-start-test" onclick="">Сдать на проверку</button>-->
+        <button class="option" onclick="goCoding()">Вернуться к выбору языка</button>
+    </div>
 </section>
 
 <!--end PHPStarted-->
-<!-- End of PHP area-->
-
 
 <!--Java area-->
 <section class="java">
@@ -189,14 +184,14 @@
 </section>
 <!--end Java chosen-->
 <!--start javaStarted-->
-<!-- Здесь ниже пишем радиобаттоны и задачки, а кнопка "сдать на проверку" выдает результат и пишет вывод -->
 <section class="javaStarted">
     <div class="text-block">
         <p class="text-block-text"></p>
     </div>
     <div class="options-block">
-        <button class="option-start-test" onclick="">Сдать на проверку</button>
-        </div>
+        <!--<button class="option-start-test" onclick="">Сдать на проверку</button>-->
+        <button class="option" onclick="goCoding()">Вернуться к выбору языка</button>
+    </div>
 </section>
 
 <!-- End of Java area-->
@@ -212,15 +207,14 @@
     </div>
 </section>
 
-
-<!-- Здесь ниже пишем радиобаттоны и задачки, а кнопка "сдать на проверку" выдает результат и пишет вывод -->
 <section class="pythonStarted">
     <div class="text-block">
         <p class="text-block-text"></p>
     </div>
     <div class="options-block">
-        <button class="option-start-test" onclick="">Сдать на проверку</button>
-        </div>
+        <!--<button class="option-start-test" onclick="">Сдать на проверку</button>-->
+        <button class="option" onclick="goCoding()">Вернуться к выбору языка</button>
+    </div>
 </section>
 
 <!-- End of Python area-->
@@ -242,7 +236,7 @@
     <div>
     <p class="quiz" id="result"></p>
     </div>
-    <div></div>
+    <div>
     <p class="imageInQuiz" id="question"></p>
     </div>
     <div class="options-block">        
@@ -251,11 +245,192 @@
         <button class="option" onclick="checkAnswer(3)" id="answer3"></button>        
         <button class="option" onclick="checkAnswer(4)" id="answer4"></button>
     </div>
-</section>
+    <!--<button class="option-start-test" onclick="">Сдать на проверку</button>-->
+    </section>
 <section>
         <button id="start"></button>
 </section>
 <!--КАРАКУЛЬКО ЗАКОНЧИЛ-->
+
+<!--НАЧАЛО ВРУБЛЕВСКИЙ-->
+<!--Start sweetHome-->
+<section class="sweetHome" >
+    <div class="text-block">
+        <p class="text-block-text">И все-таки, не такой уже и хороший этот Джон!
+            Он местная звезда, а кто я? Я обычный лузер, который в будущем станет
+            для него отличным поводом для насмешек. Пойду домой...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="entrySweetHome()">Далее</button>
+    </div>
+</section>
+<!--end sweetHome-->
+<!--Start entryHome-->
+<section class="entryHome" >
+    <div class="text-block">
+        <p class="text-block-text">Вот я и дома.  Думал, что хоть на новом месте будет лучше,
+            но нет. Я все тот же лузер, ничего не меняется.  Чем же мне заняться,
+            чтобы хоть как-то скрасить свое одиночество? </p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="playComputerHome()">Поиграть на компе</button>
+        <button class="option" onclick="playStreetHome()">Поплавать в бассейне</button>
+        <button class="option" onclick="watchTVHome()">Посмотреть ТВ</button>
+        <button class="option" onclick="sleepHome()">Поспать</button>
+    </div>
+</section>
+<!--end entryHome-->
+<!--Start playComputerHome-->
+<section class="computerGameHome">
+    <div class="text-block">
+        <p class="text-block-text">Нет ничего лучше, чем посидеть и поиграть
+            в какую-нибудь интересную игрушку. В такие моменты забываешь о всех
+            своих неудачах. Благо, что у меня есть мощный компьютер.  </p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="entryComputerHome()">Далее</button>
+    </div>
+</section>
+<!--end playComputerHome-->
+<!--start playComputerGameHome-->
+<section class="playComputerGameHome">
+    <div class="text-block">
+        <p class="text-block-text">Ничего не предвещало беды. Но в какой-то момент в
+            доме произошел «скачок» напряжения. Начался сильный пожар. Комната быстро
+            начала гореть… </p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="fireGameHome()">Далее</button>
+    </div>
+</section>
+<!--end playComputerGameHome-->
+<!--start fireComputerHome block-->
+<section class="fireComputerHome">
+    <div class="text-block">
+        <p class="text-block-text">Очень жаль, а ведь он был так молод...
+            Но лузер, как ни крути...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="ripFunctionCompHome()">Далее</button>
+    </div>
+</section>
+<!--end fireComputerHome block-->
+<!--start ripGameFire block-->
+<section class="ripGameFire">
+    <div class="text-block">
+        <p class="text-block-text">Есть шанс начать всё заново и избежать печальной участи.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="newGameCompHome()">Далее</button>
+    </div>
+</section>
+<!--end ripGameFire block-->
+<!--start streetPlay-->
+<section class="streetPlay">
+    <div class="text-block">
+        <p class="text-block-text">Какая замечательная погода на улице. Самое время поплавать в бассейне.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="poolDropHome()">Далее</button>
+    </div>
+</section>
+<!--end streetPlay -->
+<!--start dropPool-->
+<section class="dropPool">
+    <div class="text-block">
+        <p class="text-block-text">Как говорится, лузер - это навсегда. Наш герой подскользнулся и упал, ударившись
+        головой о плитку...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="dropRipPoolHome()">Далее</button>
+    </div>
+</section>
+<!--end dropPool-->
+<!--start ripDropPool Block-->
+<section class="dropRipPool">
+    <div class="text-block">
+        <p class="text-block-text">Печальный конец получился у лузера...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="dropHome()">Далее</button>
+    </div>
+</section>
+<!--end ripDropPool Block-->
+<!--ripPool-->
+<section class="ripPool">
+    <div class="text-block">
+        <p class="text-block-text">Есть шанс начать всё заново и избежать печальной участи.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="newGameStreetHome()">Далее</button>
+    </div>
+</section>
+<!--ripPool-->
+<!--watchTv-->
+<section class="watchTv">
+    <div class="text-block">
+        <p class="text-block-text">Хорошее средство от плохого настроения - просмотр телевизора.
+        Поэтому самое время приступить к просмотру.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="watchProblemHome()">Далее</button>
+    </div>
+</section>
+<!--watchTv-->
+<!--watchProblem-->
+<section class="watchProblem">
+    <div class="text-block">
+        <p class="text-block-text">Вроде бы ничего не предвещало беды. Герой спокойно
+        смотрел телевизор, все как обычно. Но от судьбы не уйдешь. Люстра упала прямо на
+        нашего героя...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="ripProblemHome()">Далее</button>
+    </div>
+</section>
+<!--watchProblem-->
+<!--tvRipHome-->
+<section class="tvRipHome">
+    <div class="text-block">
+        <p class="text-block-text">Печальный конец получился у лузера...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="ripTVHome()">Далее</button>
+    </div>
+</section>
+<!--tvRipHome-->
+<!--ripTV-->
+<section class="ripTV">
+    <div class="text-block">
+        <p class="text-block-text">Есть шанс начать всё заново и избежать печальной участи.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="newGameTVHome()">Далее</button>
+    </div>
+</section>
+<!--ripTV-->
+<!--sleepSweetHome-->
+<section class="sleepSweetHome">
+    <div class="text-block">
+        <p class="text-block-text">Самое лучшее лекарство - это сон. Именно во сне мы забываем
+        все наши проблемы, можем приснить хорошие события в нашей жизни.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="friendHome()">Далее</button>
+    </div>
+</section>
+<!--goodFriends-->
+<section class="goodFriends">
+    <div class="text-block">
+        <p class="text-block-text">Именно во сне наш герой подружился с Джоном, ходил с ним на тусовки,
+        в тренажерный зал и прочие места. Хоть где-то, наш герой был не одинок. Если нажать на "Далее", то
+        можно попасть на начальный экран.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="firstPageDocument()">Далее</button>
+    </div>
+</section>
+<!--ВРУБЛЕВСКИЙ ЗАКОНЧИЛ-->
 
 
 
