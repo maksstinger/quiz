@@ -124,6 +124,13 @@ comics-content-start-page {
     background-color: #fff;
     color: #622122;
 }
+.options-block .option:disabled {
+    background-color: grey;
+}
+.options-block .option:disabled:hover {
+    background-color: grey;
+    color: #fff;
+}
 /*End first level*/
 .cinema {
     background: url("../images/cinema.png") no-repeat;
