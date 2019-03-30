@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="shortcut icon" href="images/fav.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+<body>
+
+<!-- Start Page -->
+<section class="comics-content-start-page">
+    <img src="images/logo.png" alt="game logo" class="start-logo">
+
+    <input type="text" class="user-name" id="userName" placeholder="Как тебя зовут?">
+
+    <button class="start-page-button" id="start-page-button" onclick="userHello()">
+        Начать историю
+    </button>
+    <p class="errorName">Введите имя</p>
+</section>
+<!--End Start Page-->
+
+<!--Start Hello User-->
+<section class="hello-user">
+    <img src="images/logo.png" alt="game logo" class="start-logo" >
+    <p class="hello-user-text"></p>
+    <p class="hello-user-text">Играя в эту игру помните, что каждое действие, рождает в равное по силе противодействие! Начнём?</p>
+    <button class="start-page-button" onclick="firstOption()">Далее</button>
+</section>
+<!--End Hello User-->
+
+<!--Start first level-->
+<section class="first-level">
+    <div class="text-block">
+        <p class="text-block-text">Огромный "плюс" нового города в том, что никто не знает, что ты лузер! С Джоном было бы круто затусить, может мне что-нибудь перепадёт от его подружек...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="goCinema()">Пойти в кино</button>
+        <button class="option" onclick="goConcert()">Пойти на концерт</button>
+        <button class="option" onclick="goCoding()">Записаться на курсы программирования</button>
+        <button class="option">Думать о хорошем</button>
+    </div>
+</section>
+<!--end first level-->
+
+<!--Start cinema-->
+<section class="cinema" >
+    <div class="text-block">
+        <p class="text-block-text">Джон: Ну что, кто выиграет - тому красивая. Выбирай: орёл или решка?</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="getCoin(0)">Орёл</button>
+        <button class="option" onclick="getCoin(1)">Решка</button>
+    </div>
+</section>
+<!--end cinema-->
+
+<!--start coin block-->
+<section class="coin-block">
+    <div class="text-block">
+        <p class="text-block-text coin-text"></p>
+    </div>
+    <div class="options-block">
+        <button class="option" id="coinBlockBtn">Далее</button>
+    </div>
+</section>
+<!--end coin block-->
+
+<!--start beautiful-girl-history-->
+<section class="beautiful-girl-history">
+    <section class="beautiful-girl-history-block">
+        <div class="text-block">
+            <p class="text-block-text beautiful-girl-history-text"></p>
+        </div>
+        <div class="options-block">
+            <button class="option" onclick="cartmanFunction()">Далее</button>
+        </div>
+    </section>
+</section>
+<!--end beautiful-girl-history-->
+
+<!--start cartman block-->
+<section class="cartman">
+     <div class="text-block">
+         <p class="text-block-text">Все знают, что во рту девочек очень много микробов, возможно, что больше всего в мире. Это и убило юнного мальчика. Жаль, что он узнал об этом так поздно.<span class="cartm">Эрик Картман (13 сезон, 1-я серия)</span></p>
+        </div>
+        <div class="options-block">
+            <button class="option" onclick="ripFunction()">Далее</button>
+       </div>
+</section>
+<!--end cartman block-->
+
+<!--start RIP block-->
+<section class="rip">
+    <p class="nameInRip"></p>
+    <div class="text-block">
+        <p class="text-block-text rip-from-girl"></p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="newGame()">Далее</button>
+    </div>
+</section>
+<!--end RIP block-->
+
+<!--start fatGirl-->
+<section class="fatGirl">
+    <div class="text-block">
+        <p class="text-block-text fat-girl-text"></p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="newGame()">Далее</button>
+    </div>
+</section>
+<!--end fatGirl-->
+
+<!--start concert-->
+<section class="concert">
+    <div class="text-block">
+        <p class="text-block-text">Джо, какой концерт проводят в 10 утра? - Это не концерт, а фестиваль! Может получится затусить с музыкантами...</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="">Далее</button>
+    </div>
+</section>
+<!--end concert-->
+
+
+<!--ЗДЕСЬ НИЖЕ ПИШЕТ КАРАКУЛЬКО-->
+
+<!--start choose lang-->
+<section class="langChoose">
+    <div class="text-block">
+        <p class="text-block-text">Вместо того, чтобы бесцельно шляться по улицам, лучше начнем работать на будущее сейчас. Ведь спустя 10 лет копания могил переучиваться с могильщика на айтишника будет ой как непросто. Особенно, когда кожа на ладонях зачерствела от черенка лопаты.</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="goJS()">JavaScript</button>
+        <button class="option" onclick="goJava()">Java</button>
+        <button class="option" onclick="goPython()">Python</button>
+        <button class="option" onclick="goPHP()">PHP</button>
+    </div>
+</section>
+
+<!--end choose lang-->
+
+<!--JavaScript area-->
+
+<!--start PHP chosen-->
+<section class="php">
+    <div class="text-block">
+        <p class="text-block-text">TEXT</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="startPHPTest()">Начать тест</button>
+        <button class="option" onclick="goCoding()">Вернуться к выбору языка</button>
+    </div>
+</section>
+
+<!--end JS chosen-->
+<!--start jsStarted-->
+
+<!-- Здесь ниже пишем радиобаттоны и задачки, а кнопка "сдать на проверку" выдает результат и пишет вывод -->
+<section class="phpStarted">
+    <div class="text-block">
+        <p class="text-block-text">TEXT готов</p>
+    </div>
+    <div class="options-block">
+        <button class="option-start-test" onclick="">Сдать на проверку</button>
+        </div>
+</section>
+
+<!--end PHPStarted-->
+<!-- End of PHP area-->
+
+
+<!--Java area-->
+<section class="java">
+    <div class="text-block">
+        <p class="text-block-text"></p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="startJavaTest()">Начать тест</button>
+        <button class="option" onclick="goCoding()">Вернуться к выбору языка</button>
+    </div>
+</section>
+<!--end Java chosen-->
+<!--start javaStarted-->
+<!-- Здесь ниже пишем радиобаттоны и задачки, а кнопка "сдать на проверку" выдает результат и пишет вывод -->
+<section class="javaStarted">
+    <div class="text-block">
+        <p class="text-block-text"></p>
+    </div>
+    <div class="options-block">
+        <button class="option-start-test" onclick="">Сдать на проверку</button>
+        </div>
+</section>
+
+<!-- End of Java area-->
+
+<!--Python area-->
+<section class="python">
+    <div class="text-block">
+        <p class="text-block-text"></p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="startPythonTest()">Начать тест</button>
+        <button class="option" onclick="goCoding()">Вернуться к выбору языка</button>
+    </div>
+</section>
+
+
+<!-- Здесь ниже пишем радиобаттоны и задачки, а кнопка "сдать на проверку" выдает результат и пишет вывод -->
+<section class="pythonStarted">
+    <div class="text-block">
+        <p class="text-block-text"></p>
+    </div>
+    <div class="options-block">
+        <button class="option-start-test" onclick="">Сдать на проверку</button>
+        </div>
+</section>
+
+<!-- End of Python area-->
+
+<!--JS area-->
+<section class="js">
+    <div class="text-block">
+        <p class="text-block-text">Отличный выбор!</p>
+    </div>
+    <div class="options-block">
+        <button class="option" onclick="startJSTest(), checkAnswer(0)">Начать тест</button>
+        <button class="option" onclick="goCoding()">Вернуться к выбору языка</button>
+    </div>
+</section>
+
+<!-- Здесь ниже пишем радиобаттоны и задачки, а кнопка "сдать на проверку" выдает результат и пишет вывод -->
+
+<section class="jsStarted">
+    <div>
+    <p class="quiz" id="result"></p>
+    </div>
+    <div></div>
+    <p class="imageInQuiz" id="question"></p>
+    </div>
+    <div class="options-block">        
+        <button class="option" onclick="checkAnswer(1)" id="answer1"></button>        
+        <button class="option" onclick="checkAnswer(2)" id="answer2"></button>        
+        <button class="option" onclick="checkAnswer(3)" id="answer3"></button>        
+        <button class="option" onclick="checkAnswer(4)" id="answer4"></button>
+    </div>
+</section>
+<section>
+        <button id="start"></button>
+</section>
+<!--КАРАКУЛЬКО ЗАКОНЧИЛ-->
+
+
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
+ 

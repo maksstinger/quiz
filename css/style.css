@@ -1,0 +1,378 @@
+* {
+    outline: none;
+}
+comics-content-start-page {
+
+}
+.start-logo {
+    width: 800px;
+    height: 140px;
+    display: block;
+    margin: 10vh auto 0 auto;
+    text-align: center;
+}
+.user-name {
+    text-align: center;
+    display: block;
+    width: 800px;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -400px;
+    border: 2px solid #622122;
+    border-radius: 20px;
+    color: #622122;
+}
+.start-page-button {
+    border: none;
+    font-size: 40px;
+    padding: 20px;
+    width: 400px;
+    position: absolute;
+    bottom: 15vh;
+    left: 50%;
+    margin-left: -200px;
+    border: 2px solid #622122;
+    color: #622122;
+    background-color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.start-page-button:hover {
+    color: #fff;
+    background-color: #622122;
+}
+.errorName {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-left: -142px;
+    color: red;
+    display: none;
+}
+
+/*Start hello user*/
+.hello-user {
+    display: none;
+    text-align: center;
+}
+.hello-user-text {
+    width: 800px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #622122;
+}
+
+/*END HELLO USER*/
+
+
+
+
+
+
+
+
+/*START FIRST LEVEL*/
+
+.first-level {
+    background: url("../images/firstBlock.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.text-block {
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    height: 10vh;
+    bottom: 20vh;
+    text-align: center;
+    width: 100%;
+}
+.text-block-text {
+    margin-top: 5px;
+    color: #622122;
+    font-size: 20px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.options-block {
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 75px 75px;
+    grid-gap: 15px;
+    left: 50%;
+    margin-left: -357px;
+}
+.options-block .option {
+    font-size: 25px;
+    border: none;
+    color: #fff;
+    background-color: #622122;
+    cursor: pointer;
+}
+.options-block .option:hover {
+    background-color: #fff;
+    color: #622122;
+}
+/*End first level*/
+.cinema {
+    background: url("../images/cinema.png") no-repeat;
+    -webkit-background-size: 900px 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+
+
+.coin-block {
+    background: url("../images/orel.png") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+
+.beautiful-girl-history {
+    background: url("../images/kiss.png") no-repeat;
+    -webkit-background-size: 1000px 600px;
+    background-size: 1000px 600px;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.cartman {
+    background: url("../images/cartman.png") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 900px 600px;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.cartm {
+    font-style: italic;
+}
+.rip {
+    background: url("../images/rip.png") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.fatGirl {
+    background: url("../images/fat.png") no-repeat;
+    -webkit-background-size: 800px 600px;
+    background-size: 800px 600px;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.nameInRip {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-size: 40px;
+    color: #68728d;
+}
+.concert {
+    background: url("../images/conc.jpeg") no-repeat;
+    -webkit-background-size: 600px 600px;
+    background-size: 600px 600px;
+    background-position: center center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+/* Каракулько код*/
+.options-block .option-start-test {
+    font-size: 25px;
+    border: none;
+    color: #fff;
+    background-color: #622122;
+    cursor: pointer;
+}
+.options-block .option:hover {
+    background-color: #fff;
+    color: #622122;
+}
+#answer1,#answer2,#answer3,#answer4{
+    display:none;
+    margin-bottom: 20px;
+}
+.bubble {
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+    background: #3C8FB7;
+    padding: 4px 8px;
+    border: 0;
+    cursor: pointer;
+}
+.langChoose {
+    background: url("../images/goCoding/chooseLang.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.js {
+    background: url("../images/goCoding/JSmain.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: auto auto;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.jsStarted {
+    /*background: url("images/chooseLang.jpg") no-repeat;*/
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.java {
+    /*background: url("../images/chooseLang.jpg") no-repeat;*/
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.javaStarted {
+    /*background: url("images/chooseLang.jpg") no-repeat;*/
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.python {
+    /*background: url("../images/chooseLang.jpg") no-repeat;*/
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.pythonStarted {
+    /*background: url("images/chooseLang.jpg") no-repeat;*/
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.php {
+    /*background: url("../images/chooseLang.jpg") no-repeat;*/
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 100%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+.phpStarted {
+    /*background: url("../images/chooseLang.jpg") no-repeat;*/
+    -webkit-background-size: 100% 100%;
+    background-size: 900px 80%;
+    background-position: center;
+    height: 70vh;
+    width: 100%;
+    display: none;
+}
+
+.quiz {
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    padding-top: 2px;
+    
+}
+
+.imageInQuiz {
+    text-align: center;
+    margin-top: 5px;
+    color: #622122;
+    font-size: 30px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Конец Каракулько код*/
+
+
+
+
+
+/* Начало КОРЕНЕВИЧ код*/
+
+
+
+/* Конец КОРЕНЕВИЧ код*/
+
+
+
+
+
+
+
+/* Начало ВРУБЛЕВСКИЙ код*/
+
+
+/* Конец ВРУБЛЕВСКИЙ код*/
+
+
+
+
+/*Это должно быть после всего и всех*/
+.show {
+    display: block;
+}
+.notShow {
+    display: none;
+}
+
+
